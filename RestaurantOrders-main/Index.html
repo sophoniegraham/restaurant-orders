@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Orders</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🍝 Welcome to Sophie's Restaurant!</h1>
+      <p class="tagline">Fresh, Delicious, Fast.</p>
+    </header>
+
+    <main>
+      <div class="menu">
+        <div class="menu-card">
+          <span>🍔</span>
+          <h2>Burger</h2>
+          <p>$10</p>
+        </div>
+        <div class="menu-card">
+          <span>🍕</span>
+          <h2>Pizza</h2>
+          <p>$12</p>
+        </div>
+        <div class="menu-card">
+          <span>🥗</span>
+          <h2>Salad</h2>
+          <p>$8</p>
+        </div>
+        <div class="menu-card">
+          <span>🍟</span>
+          <h2>Fries</h2>
+          <p>$5</p>
+        </div>
+      </div>
+      <button class="order-btn" onclick="placeOrder()">Place Order</button>
+    </main>
+
+    <footer>
+      <p>© 2025 Sophonie Graham. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Popup message -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <h2>🎉 Thank you for your order!</h2>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
